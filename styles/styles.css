@@ -100,6 +100,18 @@ main {
 .skill_box {
     margin: 0 5px;
 }
+figure {
+    margin: 20px 0
+}
+figure img {
+    width: 100%;
+}
+.banner_mobile {
+    display: block;
+}
+.banner_desktop {
+    display: none;
+}
 
 
 
@@ -148,6 +160,12 @@ main {
 
     main {
         margin-top: 100px;
+    }
+    .banner_mobile {
+        display: none;
+    }
+    .banner_desktop {
+        display: block;
     }
 }
 
