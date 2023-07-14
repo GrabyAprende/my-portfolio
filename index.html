@@ -26,9 +26,7 @@
             <ul>
                 <li><a class="yellow_text" href="#">SOBRE MI</a></li>
                 <li><a class="yellow_text" href="#">HABILIDADES</a></li>
-                <li><a class="yellow_text" href="#">PROYECTOS</a></li>
                 <li><a class="yellow_text" href="#">CONTACTO</a></li>
-
             </ul>
         </nav>
     </header>
@@ -39,7 +37,7 @@
                 el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor</p>
         </section>
         <section id="skills">
-            <h2>HABILIDADES con barra de progreso</h2>
+            <h2>HABILIDADES</h2>
             <div class="skills_list">
                 <div class="skill_box">
                     <h3>HTML</h3>
@@ -88,23 +86,23 @@
             </figure> 
         </section>
         <form class="form" method="post">
-            <div class="form_element">
-            <div>
+            <div class="form_section">
+            <div class="form_label_and_input">
                 <label class="form_label" for="name">Nombre</label>
                 <input class="form_input" type="text" id="name"  required>
             </div>
-            <div>
+            <div class="form_label_and_input">
                 <label class="form_label" for="surname">Apellido</label>
                 <input class="form_input" type="text" id="surname"  required>
             </div>
         </div>
-            <div class="form_element1">
-            <div>
+            <div class="form_section">
+            <div class="form_label_and_input">
                 <label class="form_label" for="phone">Teléfono</label>
                 <input class="form_input" type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
             </div>
-            <div>
-                <label class="form_label" for="tagGithub">GitHub username</label>
+            <div class="form_label_and_input">
+                <label class="form_label" for="tagGithub">GitHub</label>
                 <input class="form_input" type="text" id="tagGithub" pattern="^@[^\s]+" placeholder="@username">
             </div>
         </div>
@@ -128,17 +126,17 @@
             </div>
             </fieldset>
             
-            <div>
+            <div class="form_textarea">
                 <label class="form_label" for="mensaje">Mas información</label>
-                <textarea class="form_input" name="mensaje" id="mensaje" placeholder="Que más te gustaría saber" cols="100" rows="5" minlength="10" maxlength="180" required></textarea>
+                <textarea class="form_input" name="mensaje" id="mensaje" placeholder="Si quieres saber más, ¡escríbeme!" cols="100" rows="5" minlength="10" maxlength="180" required></textarea>
             </div>
             <div class="form_checkbox">
-                <label for="newsletter">Acceso a la newsletter</label>
                 <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter">Acceso a la newsletter</label>
             </div>
-            <div class="btn">
-                <button class="btn_reset" type="reset">Reset</button>
-                <input class="btn_submit" type="submit" value="Guardar">
+            <div class="btn_box">
+                <button class=" btn_form btn_reset" type="reset">Reset</button>
+                <input class=" btn_form btn_submit" type="submit" value="Guardar">
             </div>
             </form>
             </main>
