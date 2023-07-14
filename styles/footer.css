@@ -1,0 +1,16 @@
+footer {
+    margin: 20px;
+    margin-top: 25px;
+}
+footer .redes_sociales {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /*background-color: var(--yellow_light);*/
+    padding: 8px;
+    gap: 15px;
+}
+
+footer .redes_sociales a img {
+    width: 40px;
+}

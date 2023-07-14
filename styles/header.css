@@ -1,0 +1,74 @@
+:root {
+    --grey: #e1e8ec;
+    --blue: #01587a;
+    --yellow: #f3ba00;
+    --yellow_light: #f8d966;
+    --box_padding: 0 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--grey);
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+header {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    /*Estilo para tablet en adelante*/
+    header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: calc(100% - 20px);
+        background-color: var(--blue);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: var(--box_padding);
+        z-index: 1000;
+    }
+
+    .yellow_text {
+        color: var(--yellow);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .yellow_text:hover {
+        color: var(--yellow_light);
+    }
+
+    .yellow_text h1 {
+        margin: 0;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    nav ul li {
+        padding-left: 20px;
+    }
+
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilo solo para tablet */
+
+}
+
+@media screen and (min-width: 1024px) {
+    /* Estilo para escritorio */
+
+}

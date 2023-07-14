@@ -11,7 +11,10 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
     <title>Mi Portafolio</title>
 </head>
 
@@ -24,9 +27,10 @@
         </div>
         <nav id="menu" role="navigation">
             <ul>
-                <li><a class="yellow_text" href="#">SOBRE MI</a></li>
-                <li><a class="yellow_text" href="#">HABILIDADES</a></li>
-                <li><a class="yellow_text" href="#">CONTACTO</a></li>
+                <li><a class="yellow_text" href="#about_me">SOBRE MI</a></li>
+                <li><a class="yellow_text" href="#skills">HABILIDADES</a></li>
+                <li><a class="yellow_text" href="#contact">CONTACTO</a></li>
+                <li><a class="yellow_text" href="/mis-proyectos.html">PROYECTOS</a></li>
             </ul>
         </nav>
     </header>
@@ -34,11 +38,13 @@
         <section id="about_me">
             <h2>Sobre mi</h2>
             <p>
-Me llamo Gabriela, tengo 32 años y estoy iniciándome en el mundo de la programación, como Desarrolladora Web Full Stack.
-<br>
-Me apasiona el aprendizaje continuo y siempre estoy buscando nuevas formas de mejorar mis habilidades como futura desarrolladora.
-<br>
-Soy creativa, ordenada y me encantan los puzzles.
+                Me llamo Gabriela, tengo 32 años y estoy iniciándome en el mundo de la programación, como Desarrolladora
+                Web Full Stack.
+                <br>
+                Me apasiona el aprendizaje continuo y siempre estoy buscando nuevas formas de mejorar mis habilidades
+                como futura desarrolladora.
+                <br>
+                Soy creativa, ordenada y me encantan los puzzles.
             </p>
         </section>
         <section id="skills">
@@ -88,70 +94,78 @@ Soy creativa, ordenada y me encantan los puzzles.
             </figure>
             <figure class="banner_mobile">
                 <img src="assets/mobile_ordenador.jpg" alt="Foto de ordenador">
-            </figure> 
+            </figure>
         </section>
-        <form class="form" method="post">
-            <div class="form_section">
-            <div class="form_label_and_input">
-                <label class="form_label" for="name">Nombre</label>
-                <input class="form_input" type="text" id="name"  required>
-            </div>
-            <div class="form_label_and_input">
-                <label class="form_label" for="surname">Apellido</label>
-                <input class="form_input" type="text" id="surname"  required>
-            </div>
-        </div>
-            <div class="form_section">
-            <div class="form_label_and_input">
-                <label class="form_label" for="phone">Teléfono</label>
-                <input class="form_input" type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
-            </div>
-            <div class="form_label_and_input">
-                <label class="form_label" for="tagGithub">GitHub</label>
-                <input class="form_input" type="text" id="tagGithub" pattern="^@[^\s]+" placeholder="@username">
-            </div>
-        </div>
-            <fieldset>
-                <legend>¿Cómo me conociste?</legend>
-                <div>
-                <label for="universidad">Universidad</label>
-                <input type="radio" name="referencia" id="universidad" required>
-            </div>
-            <div>
-                <label for="keepCoding">KeepCoding Kick-off</label>
-                <input type="radio" name="referencia" id="keepCoding">
-            </div>
-            <div>
-                <label for="colegio">Colegio</label>
-                <input type="radio" name="referencia" id="colegio">
-            </div>
-            <div>
-                <label for="github">GitHub</label>
-                <input type="radio" name="referencia" id="github">
-            </div>
-            </fieldset>
-            
-            <div class="form_textarea">
-                <label class="form_label" for="mensaje">Mas información</label>
-                <textarea class="form_input" name="mensaje" id="mensaje" placeholder="Si quieres saber más, ¡escríbeme!" cols="100" rows="5" minlength="10" maxlength="180" required></textarea>
-            </div>
-            <div class="form_checkbox">
-                <input type="checkbox" name="newsletter" id="newsletter">
-                <label for="newsletter">Acceso a la newsletter</label>
-            </div>
-            <div class="btn_box">
-                <button class=" btn_form btn_reset" type="reset">Reset</button>
-                <input class=" btn_form btn_submit" type="submit" value="Guardar">
-            </div>
-            </form>
-            </main>
-            <footer>
-                <div class="redes_sociales">
-                    <a href="https://www.linkedin.com/in/gabriela-aguilera-59a624244/" target="_blank"> <img src="assets/icons/linkedin.png" alt="Icono de linkedin"></a>
-                    <a href="https://github.com/GrabyAprende" target="_blank"><img src="assets/icons/github.png"alt="Icono de GitHub"></a>
-                    <a href="https://twitter.com/Gabichu" target="_blank"><img src="assets/icons/twitter2.png" alt="Icono de twitter"></a>
+        <section id="contact">
+            <form  class="form" method="post">
+                <div class="form_section">
+                    <div class="form_label_and_input">
+                        <label class="form_label" for="name">Nombre</label>
+                        <input class="form_input" type="text" id="name" required>
+                    </div>
+                    <div class="form_label_and_input">
+                        <label class="form_label" for="surname">Apellido</label>
+                        <input class="form_input" type="text" id="surname" required>
+                    </div>
                 </div>
-            </footer>
+                <div class="form_section">
+                    <div class="form_label_and_input">
+                        <label class="form_label" for="phone">Teléfono</label>
+                        <input class="form_input" type="tel" name="phone" id="phone"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+                    </div>
+                    <div class="form_label_and_input">
+                        <label class="form_label" for="tagGithub">GitHub</label>
+                        <input class="form_input" type="text" id="tagGithub" pattern="^@[^\s]+" placeholder="@username">
+                    </div>
+                </div>
+                <fieldset>
+                    <legend>¿Cómo me conociste?</legend>
+                    <div>
+                        <label for="universidad">Universidad</label>
+                        <input type="radio" name="referencia" id="universidad" required>
+                    </div>
+                    <div>
+                        <label for="keepCoding">KeepCoding Kick-off</label>
+                        <input type="radio" name="referencia" id="keepCoding">
+                    </div>
+                    <div>
+                        <label for="colegio">Colegio</label>
+                        <input type="radio" name="referencia" id="colegio">
+                    </div>
+                    <div>
+                        <label for="github">GitHub</label>
+                        <input type="radio" name="referencia" id="github">
+                    </div>
+                </fieldset>
+
+                <div class="form_textarea">
+                    <label class="form_label" for="mensaje">Mas información</label>
+                    <textarea class="form_input" name="mensaje" id="mensaje"
+                        placeholder="Si quieres saber más, ¡escríbeme!" cols="100" rows="5" minlength="10"
+                        maxlength="180" required></textarea>
+                </div>
+                <div class="form_checkbox">
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">Acceso a la newsletter</label>
+                </div>
+                <div class="btn_box">
+                    <button class=" btn_form btn_reset" type="reset">Reset</button>
+                    <input class=" btn_form btn_submit" type="submit" value="Guardar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="redes_sociales">
+            <a href="https://www.linkedin.com/in/gabriela-aguilera-59a624244/" target="_blank"> <img
+                    src="assets/icons/linkedin.png" alt="Icono de linkedin"></a>
+            <a href="https://github.com/GrabyAprende" target="_blank"><img src="assets/icons/github.png"
+                    alt="Icono de GitHub"></a>
+            <a href="https://twitter.com/Gabichu" target="_blank"><img src="assets/icons/twitter2.png"
+                    alt="Icono de twitter"></a>
+        </div>
+    </footer>
 
 </body>
 
